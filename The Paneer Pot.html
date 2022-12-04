@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>The Paneer Pot</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script>
+function validateform(){
+var name=document.myform.name.value;
+var phnum=document.myform.phnum.value;
+var mail=document.myform.mail.value;
+var message=document.myform.message.value;
+if(name==null || name==""){
+  alert("Name can't be blank!");
+  return false;
+}else if(mail==null || mail==""){
+  alert("Email can't be blank!");
+  return false;
+  }else if(phnum.length!=10){
+  alert("Phone number should be 10 characters long!");
+  return false;
+}else if(message==null || message==""){
+  alert("Please provide some Feedback!\nWe value our Customer's Feedback.");
+  return false;
+}
+}
+
+function validateforms(){
+var n=document.form.username.value;
+var password=document.form.password.value;
+if(n==null || n==""){
+  alert("Username can't be blank!");
+  return false;
+}else if(password.length<8){
+  alert("Password should be 8 characters long!");
+  return false;
+}
+
+}
+</script>
+</head>
+
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <img src="img/logo.png">
+        </div>
+        <ul>
+            <li style="font-size: 17px;"> <br> <a href="#home">Home</a> </li>
+            <li style="font-size: 17px;"> <br> <a href="#home">About</a> </li>
+            <li style="font-size: 17px;"> <br> <a href="#our-menu">Menu</a> </li>
+		<li style="font-size: 17px;"> <br> <a href="#deals">Deals</a> </li>
+            <li style="font-size: 17px;"> <br> <a href="#gallery">Gallery</a> </li>
+            <li style="font-size: 17px;"> <br> <a href="#tips">Health Tips</a> </li>
+            <li style="font-size: 17px;"> <br> <a href="#contact">Contact Us</a> </li>
+		<li style="font-size: 17px;"> <br><p1 onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</p1>
+
+<div id="id01" class="modal">
+  
+  <form name="form" class="modal-content animate" action="" method="post" onsubmit="return validateforms()">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="img/img_avatar2.png" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="username">
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="password">
+        
+      <button type="submit">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+    </div>
+  </form>
+</div></li>
+
+            <li style="font-size: 12px; color: white; text-align:right; margin-left: 100px;">Phone: 020-25897645 <br>
+                Email: support@thepaneerpot.co.in <br> Serving Hours: 10am-11pm <br> Address: 414,Dr.Homi Bhaba Road,Pashan,Pune-411008</li>
+        </ul>
+    </nav>
+
+    <section id="home">
+        <h1 class="h-primary">The Paneer Pot</h1>
+        <p>The Home to Paneer lovers.The Paneer Pot is a newly opened Restaurant know for its flavourful and special Paneer specialities.
+	   Our menu mainly comrpises of all kinds of specialities made out of Paneer. If you're craving for some Paneer you've come to the right place.
+        <br>Being located in the city of Pune, we serve a wide range of fresh food, from Starters all the way to Desserts.
+           We use the freshest and finest ingredients to prepare our classic courses and provide our customers the best experiences.
+        <br>Come on now and Try Our Special Paneer delicacies Now!!!</p>
+        <!-- <button class="btn">Order Now</button> -->
+    </section>
+
+    <section id="our-menu">
+        <h1 class="h-primary center" style="font-family:Lucida Sans;">Our Menu</h1>
+        <div id="menu">
+            <div class="box">
+                <img src="img/11.jpg" alt="">
+                <h2 class="h-secondary center">Starters</h2>
+                <div>
+                        <pre> 
+                        <p>Paneer Nuggets       ₹80</p>
+				<p>Paneer Pakora        ₹80</p> 
+                        <p>Paneer Spring Roll  ₹100</p>
+				<p>Paneer 65           ₹110</p>
+                        <p>Paneer Chilly       ₹110</p>  
+                        <p>Paneer Manchurian   ₹130</p> 
+                        <p>Paneer Tikka        ₹160</p>
+				<p>Paneer Malai Tikka  ₹170</p>
+				<p>Paneer Nawabi       ₹180</p> 
+                    </pre>
+                </div>
+            </div>
+            <div class="box">
+                <img src="img/a.jpg" alt="">
+                <h2 class="h-secondary center">Breads</h2>
+                <div>
+                        <pre>
+                        <p>Tandoori Roti         ₹25</p>
+                        <p>Butter Roti           ₹30</p>
+                        <p>Naan                  ₹35</p>
+                        <p>Butter Naan           ₹40</p>
+                        <p>Kulcha                ₹40</p>
+                        <p>Butter Kulcha         ₹45</p>
+                        <p>Laccha Paratha        ₹50</p>
+                        <p>Paneer Paratha        ₹60</p>
+                    </pre>
+                </div>
+            </div>
+		<div class="box">
+                <img src="img/2.png" alt="">
+                <h2 class="h-secondary center">Main Course</h2>
+                <div>
+                        <pre>
+                        <p>Matar Paneer Masala   ₹150</p>
+				<p>Shahi Paneer          ₹160</p>
+                        <p>Paneer Kadai          ₹160</p>
+				<p>Paneer Tikka Masala   ₹160</p>                        
+				<p>Tawa Paneer           ₹170</p>
+				<p>Paneer Handi          ₹170</p>  
+				<p>Palak Paneer          ₹170</p>
+				<p>Paneer Butter Masala  ₹180</p>
+ 				<p>Paneer Lababdar       ₹190</p>
+				<p>Paneer Pasanda        ₹200</p>
+                    </pre>
+                </div>
+            </div>
+		
+            <div class="box">
+                <img src="img/ice.jpg" alt="">
+                <h2 class="h-secondary center">Desserts</h2>
+                <div>
+                        <pre>
+                        <p>Jalebi(1plate)      ₹30</p>
+				<p>Gulab Jamun         ₹30</p>                        
+				<p>Ice Cream(Variety)  ₹50</p>
+                        <p>Cold Coffee         ₹50</p>
+                        <p>MilkShake(Variety)  ₹50</p>
+                        <p>Brownie(2pcs)       ₹80</p>
+                    </pre>
+                </div>
+            </div>
+        </div>
+    </section>
+<section id="deals">
+        <h1 class="h-primary center" style="font-family:Century Gothic;">Deals of the Day!!!</h1>
+        <div id="menu">
+            <div class="box1">
+                <h2 class="h-secondary center"style="text-align:center;font-family:Century Gothic;color:Tomato;">Monday</h2>
+                <div style="text-align:center;font-family:Century Gothic;">
+                        <h1>Buy 1 Get 1 Free: Paneer Nuggets ₹80</h1> 
+                        <h2 class="h-secondary center"style="text-align:center;font-family:Century Gothic;">Tuesday</h2>
+				<h1>Buy Food worth More than ₹500 and Get ₹100 off.</h1>
+				<h2 class="h-secondary center"style="text-align:center;font-family:Century Gothic;color:Tomato;">Wednesday</h2>
+				<h1>Buy Food worth More than ₹1000 and Get ₹250 off.</h1>
+                        <h2 class="h-secondary center"style="text-align:center;font-family:Century Gothic;">Thursday</h2>
+				<h1>Buy 1 Get 1 Free:Paneer Paratha ₹60</h1>
+				<h2 class="h-secondary center"style="text-align:center;font-family:Century Gothic;color:Tomato;">Friday</h2>
+				<h1>Buy 2 Starters worth more Than ₹100 and get 1 exclusive Roti Basket Free!</h1>
+				<h2 class="h-secondary center"style="text-align:center;font-family:Century Gothic;">Saturday</h2>
+				<h1>Buy 1 Matar Paneer Masala worth ₹150 and get 1 Icecream Free!</h1>
+				<h2 class="h-secondary center"style="text-align:center;font-family:Century Gothic;color:Tomato;">Sunday</h2>
+				<h1>Buy 2 Get 1 Free: Brownie(2pcs) ₹80!!!</h1>
+                </div>
+            </div>
+</section>
+
+    <section id="gallery">
+        <h1 class="h-primary center" style="font-family:Lucida Sans;">Gallery</h1>
+        <div class="grid-container">
+            <div class="grid-item"><img class="images" src="img/1.jpg"></div>
+            <div class="grid-item"><img class="images" src="img/img1.jpg"></div>
+            <div class="grid-item"><img class="images" src="img/2.jpg"></div>
+            <div class="grid-item"><img class="images" src="img/6.jpg"></div>
+            <div class="grid-item"><img class="images" src="img/5.jpg"></div>
+            <div class="grid-item"><img class="images" src="img/3.jpg"></div>
+            <div class="grid-item"><img class="images" src="img/7.jpg"></div>
+            <div class="grid-item"><img class="images" src="img/8.jpg"></div>
+		<div class="grid-item"><img class="images" src="img/9.jpg"></div>
+        </div>
+    </section>
+
+
+    <section id="tips">
+        <h1 class="h-primary center" style="font-family:Lucida Sans;">Stay Healthy Tips</h1>
+        <div class="healthy-tips">
+            <div id="health">
+                <div class="box">
+                    <img src="img/hb.webp">
+                    <div>
+				<p>Limit Carbonated drinks.</p>
+                        <p>Visit Your Doctor Regularly.</p>
+                        <p>Wash your hands properly before and after eating Food.</p>
+                        <p>Eat plenty of fruits and vegetables.</p>
+                        <p>Avoid excess intake of Alcohol.</p>
+                        <p>Sleep 7-8 hours Daily.</p>
+                        <p>Reduce intake of harmful fats like trans-fat.</p>
+                        <p>Exercise Regularly.</p>
+				<p>Maintain a Healthy Diet.</p>
+                    </div>
+                </div>
+        </div>
+        </div>
+
+    </section>
+
+    <section id="contact">
+        <h1 class="h-primary center" style="font-family:Lucida Sans;">Contact Us</h1>
+        <div id="contact-box">
+            <form name="myform" method="post" action="" onsubmit="return validateform()">
+                <div class="form-group">
+                    <label for="name">Name: </label>
+                    <input type="text" name="name" id="name" placeholder="Enter your name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email: </label>
+                    <input type="email" name="mail" id="email" placeholder="Enter your email">
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number: </label>
+                    <input type="number" name="phnum" id="phone" placeholder="Enter your phone">
+                </div>
+                <div class="form-group">
+                    <label for="message">Feedback/Suggestions/Any Messages: </label>
+                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                </div>
+
+                <pre><input style="width: 50%; margin-top: 5px;" type="submit" value="Submit">   <input style="width: 50%; margin-top: 5px;" type="reset" value="Reset"></pre>
+
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="center">
+            Copyright &copy; www.ThePaneerPot.com. All rights reserved!
+        </div>
+    </footer>
+</body>
+
+</html>
